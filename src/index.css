@@ -6,11 +6,11 @@
 
 body {
   font-family: "Red Rose", cursive;
+  overflow: hidden;
 }
 
 .nav-btn {
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
-  transition: all 0.25s ease-in-out;
 }
 .nav-btn:hover {
   background: linear-gradient(90deg, #701152 11.45%, #701152 11.45%);
@@ -35,4 +35,8 @@ li:hover::before {
 
 .hide {
   transform: translateX(100%);
+}
+
+.show {
+  transform: translateX(0%);
 }
