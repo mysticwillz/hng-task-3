@@ -8,6 +8,31 @@ body {
   font-family: "Red Rose", cursive;
 }
 
-.nav-btn{
-  background: linear-gradient(90deg, #A02279 11.45%, #A02279 11.45%);
+.nav-btn {
+  background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
+  transition: all 0.25s ease-in-out;
+}
+.nav-btn:hover {
+  background: linear-gradient(90deg, #701152 11.45%, #701152 11.45%);
+}
+
+li::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+
+  padding: 2px;
+  width: 0%;
+
+  transition: all 0.5s ease;
+}
+
+li:hover::before {
+  width: 100%;
+  background-color: #81086d;
+}
+
+.hide {
+  transform: translateX(100%);
 }

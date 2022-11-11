@@ -1,4 +1,5 @@
 import Group from "../assets/Group.png";
+import Sidebar from "./Sidebar";
 
 function NavBar() {
   return (
@@ -7,17 +8,17 @@ function NavBar() {
         <div className="flex justify-between items-center py-5 px-4 ">
           <img src={Group} alt="logo" className="h-[36.37px] w-[233px]" />
 
-          <ul className="flex items-center w-[476px] justify-between ">
-            <li className="text-[20px] relative transition all duration-500 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
+          <ul className="flex items-center w-[476px] justify-between relative ">
+            <li className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
               <a href="">home</a>
             </li>
-            <li className="text-[20px] leading-[24.98px] text-[#434343] font-normal capitalize ">
+            <li className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
               <a href="">place to stay</a>
             </li>
-            <li className="text-[20px]  leading-[24.98px] text-[#434343] font-normal ">
+            <li className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
               <a href="">NFTs</a>
             </li>
-            <li className="text-[20px]  leading-[24.98px] text-[#434343] font-normal capitalize ">
+            <li className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
               <a href="">community</a>
             </li>
           </ul>
@@ -26,6 +27,7 @@ function NavBar() {
             Connect wallet
           </button>
         </div>
+        <Sidebar className="hide" />
       </nav>
     </>
   );
