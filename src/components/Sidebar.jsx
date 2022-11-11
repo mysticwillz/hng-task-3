@@ -4,8 +4,8 @@ function Sidebar({ hideSideBar, setHideSideBar }) {
     <div
       className={
         hideSideBar
-          ? "w-[60%] hide transition all  duration-500 ease-in h-full  absolute right-0 top-5 flex  flex-col justify-around items-center "
-          : "w-[60%]  transition all show  duration-500 ease-in h-full absolute right-0 top-5 flex  flex-col justify-around items-center "
+          ? "w-[60%] bg-gray-200 hide transition all  duration-500 ease-in h-full  absolute right-0 top-5 flex  flex-col justify-around items-center "
+          : "w-[60%] bg-gray-200  transition all show  duration-500 ease-in h-full absolute right-0 top-5 flex  flex-col justify-around items-center "
       }
     >
       <i

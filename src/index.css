@@ -12,6 +12,10 @@ body {
 .nav-btn {
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 }
+.hero-text {
+  color: #a02279;
+}
+
 .nav-btn:hover {
   background: linear-gradient(90deg, #701152 11.45%, #701152 11.45%);
 }
