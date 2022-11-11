@@ -1,5 +1,6 @@
 import React from "react";
 import Hero from "./components/Hero";
+import HeroFooter from "./components/HeroFooter";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
       <NavBar />
       <Hero />
+      <HeroFooter />
     </>
   );
 }
