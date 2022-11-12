@@ -21,7 +21,7 @@ function Main() {
   ];
   return (
     <>
-      <main className="max-w-7xl mx-auto">
+      <main className="max-w-7xl pb-[40px] mx-auto">
         <h2 className="font-bold leading-[59.95px] text-[48px] text-black text-center">
           Inspiration for your next adventure
         </h2>
