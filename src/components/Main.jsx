@@ -25,7 +25,7 @@ function Main() {
         <h2 className="font-bold leading-[59.95px] text-[48px] text-black text-center">
           Inspiration for your next adventure
         </h2>
-        <section className="flex flex-col mt-4 justify-center md:flex-wrap gap-4 items-center md:flex-row md:items-center md:justify-center">
+        <section className="flex flex-col mt-[40px] justify-center md:flex-wrap gap-4 items-center md:flex-row md:items-center md:justify-center">
           {data.map((x) => {
             const { card } = x;
             return (

@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import HeroFooter from "../components/HeroFooter";
 import Main from "../components/Main";
@@ -13,6 +14,8 @@ function Home() {
       <HeroFooter />
       <Main />
       <Nft />
+
+      <Footer />
     </>
   );
 }

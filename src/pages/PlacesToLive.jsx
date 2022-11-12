@@ -17,6 +17,7 @@ import placeSix from "../assets/place-six.png";
 import placeSeven from "../assets/place-seven.png";
 import placeEight from "../assets/place-eight.png";
 import setting from "../assets/setting.jpg";
+import Footer from "../components/Footer";
 
 function PlacesToLive() {
   const data = [
@@ -91,6 +92,7 @@ function PlacesToLive() {
           })}
         </section>
       </main>
+      <Footer />
     </>
   );
 }
