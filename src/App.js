@@ -1,18 +1,16 @@
 import React from "react";
-import Hero from "./components/Hero";
-import HeroFooter from "./components/HeroFooter";
-import Main from "./components/Main";
-import NavBar from "./components/NavBar";
-import Nft from "./components/Nft";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+
+import PlacesToLive from "./pages/PlacesToLive";
 
 function App() {
   return (
     <>
-      <NavBar />
-      <Hero />
-      <HeroFooter />
-      <Main />
-      <Nft />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/places-to-live" element={<PlacesToLive />} />
+      </Routes>
     </>
   );
 }
