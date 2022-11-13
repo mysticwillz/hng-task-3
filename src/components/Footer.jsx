@@ -10,7 +10,7 @@ export default function Footer() {
       <section className="flex flex-col py-[20px] px-2 sm:justify-between w-full sm:px-[90px] items-center   mx-auto  sm:flex-row text-white">
         <div className="flex flex-col justify-between  ">
           <img src={Group} alt="footer" className="w-[233px]   h-[50px]" />
-          <div className="flex mt-[60px] items-center gap-2 mb-[40px] cursor-pointer">
+          <div className="flex mt-[60px] items-center  mb-[40px] cursor-pointer">
             <img
               src={facebook}
               alt="footer"
@@ -19,7 +19,7 @@ export default function Footer() {
             <img
               src={instagram}
               alt="footer"
-              className="w-[  18px] h-[ 18px] cursor-pointer"
+              className="w-[  18px] h-[ 18px] px-3 cursor-pointer"
             />
             <img
               src={twitter}

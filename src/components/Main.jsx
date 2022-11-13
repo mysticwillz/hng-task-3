@@ -29,7 +29,7 @@ function Main() {
           {data.map((x, index) => {
             const { card } = x;
             return (
-              <div key={index}>
+              <div key={index} className="my-[10px] md:my-0">
                 <img
                   src={card}
                   alt="card"

@@ -6,12 +6,12 @@ import PlacesToLive from "./pages/PlacesToLive";
 
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/place-to-stay" element={<PlacesToLive />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

@@ -6,13 +6,12 @@ function Hero() {
   const [formData, setFormData] = useState("");
   return (
     <main className="flex flex-col gap-4 md:mt-[80px] mb-[30px] px-4 items-center justify-center md:flex-row md:justify-between md:items-center max-w-7xl mx-auto ">
-      <div className=" w-full md:w-40%">
+      <div className=" w-full md:w-40% mb-[10px] md:mb-0">
         <h1 className="md:after:whitespace-nowrap text-[56px] leading-[78.4px] font-normal text-[#434343]">
           Rent a <span className="font-bold hero-text"> Place</span> away from
           <span className="font-bold hero-text">
-            {" "}
             <br /> Home
-          </span>{" "}
+          </span>
           in the
           <span className="font-bold hero-text"> Metaverse</span>
         </h1>
