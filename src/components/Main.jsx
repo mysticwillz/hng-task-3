@@ -26,10 +26,10 @@ function Main() {
           Inspiration for your next adventure
         </h2>
         <section className="flex flex-col mt-[40px] justify-center md:flex-wrap gap-4 items-center md:flex-row md:items-center md:justify-center">
-          {data.map((x) => {
+          {data.map((x, index) => {
             const { card } = x;
             return (
-              <div>
+              <div key={index}>
                 <img
                   src={card}
                   alt="card"

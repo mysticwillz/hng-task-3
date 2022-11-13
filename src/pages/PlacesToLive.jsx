@@ -65,10 +65,11 @@ function PlacesToLive() {
 
       <main className="max-w-7xl pb-[50px]  mx-auto">
         <section className="flex flex-col items-start max-w-7xl justify-between lg:flex-row px-[3rem] mt-[40px] mb-[30px] lg:items-center mx-auto">
-          {tags.map((x) => {
+          {tags.map((x, index) => {
             const { tag } = x;
             return (
               <ul
+                key={index}
                 className="  
               
               flex lg:items-center lg:justify-between lg:flex flex-col items-start justify-center relative  "
@@ -85,10 +86,10 @@ function PlacesToLive() {
           </div>
         </section>
         <section className="flex flex-col mt-4 justify-center md:flex-wrap gap-4 items-center md:flex-row md:items-center md:justify-center">
-          {data.map((x) => {
+          {data.map((x, index) => {
             const { card } = x;
             return (
-              <div>
+              <div key={index}>
                 <img
                   src={card}
                   alt="card"

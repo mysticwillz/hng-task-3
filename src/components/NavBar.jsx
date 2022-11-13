@@ -38,7 +38,7 @@ function NavBar() {
             Connect wallet
           </button>
           <i
-            class={
+            className={
               hideSideBar
                 ? "fa fa-bars text-[2.5rem] hover:text-[2.54rem] md:hidden text-[#a02279]"
                 : "hidden"

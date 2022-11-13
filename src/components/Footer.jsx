@@ -6,9 +6,9 @@ import twitter from "../assets/twitter.png";
 import cc from "../assets/cc.png";
 export default function Footer() {
   return (
-    <footer className="w-full h-[322px] bg-[#1d1d1e] mx-auto flex items-center   pb-0   mb-0 justify-center">
-      <section className="flex justify-around w-full  text-white">
-        <div className="flex flex-col justify-between">
+    <footer className="w-full sm:h-[322px] bg-[#1d1d1e] mx-auto flex items-center   pb-0   mb-0 justify-center">
+      <section className="flex sm:justify-around w-full items-center sm:items-start justify-center mt-[15px] sm:mt-0 flex-col sm:flex-row text-white">
+        <div className="flex flex-col justify-between ">
           <img src={Group} alt="footer" className="w-[233px] h-[40px]" />
           <div className="flex items-center gap-2 my-[50px] cursor-pointer">
             <img
@@ -30,11 +30,11 @@ export default function Footer() {
           <img
             src={cc}
             alt="footer"
-            className="w-[139px] h-[18px]"
-            cursor-pointer
+            className="w-[139px] h-[18px]
+            cursor-pointer"
           />
         </div>
-        <div className="flex flex-col justify-center gap-4">
+        <div className="flex mt-[13px] sm:mt-0 flex-col justify-center gap-4">
           <h3 className="leading-[22.48px] text-[15px] md:text-[18px] font-bold ">
             Community
           </h3>

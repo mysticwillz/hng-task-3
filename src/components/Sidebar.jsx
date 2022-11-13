@@ -10,7 +10,7 @@ function Sidebar({ hideSideBar, setHideSideBar, setShowModal }) {
       }
     >
       <i
-        class="fa fa-times   
+        className="fa fa-times   
         text-[2.5rem] hover:text-[2.54rem] text-[#a02279]  cursor-pointer"
         aria-hidden="true"
         onClick={() => {
