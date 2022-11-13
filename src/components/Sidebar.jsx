@@ -1,11 +1,11 @@
 import React from "react";
-function Sidebar({ hideSideBar, setHideSideBar }) {
+function Sidebar({ hideSideBar, setHideSideBar, setShowModal }) {
   return (
     <div
       className={
         hideSideBar
-          ? "w-[60%] bg-gray-200 hide transition all  duration-500 ease-in h-full  absolute right-0 top-5 flex  flex-col justify-around items-center "
-          : "w-[60%] bg-gray-200  transition all show  duration-500 ease-in h-full absolute right-0 top-5 flex  flex-col justify-around items-center "
+          ? "w-[60%] bg-gray-200 hide transition all  duration-500 ease-in h-screen  absolute right-0 top-0 flex  flex-col justify-around items-center "
+          : "w-[60%] bg-gray-200  transition all show  duration-500 ease-in h-screen absolute right-0 top-0 flex  flex-col justify-around items-center "
       }
     >
       <i
@@ -31,7 +31,14 @@ function Sidebar({ hideSideBar, setHideSideBar }) {
         </li>
       </ul>
 
-      <button className="  h-[48px] w-[170px] mb-8 text-white rounded-[10px] leading-[19.98px] nav-btn hover:shadow-lg  transition all duration-250  ease-in-out ">
+      <button
+        onClick={() => {
+          setHideSideBar(true);
+
+          !hideSideBar && setShowModal(true);
+        }}
+        className="  h-[48px] w-[170px] mb-8 text-white rounded-[10px] leading-[19.98px] nav-btn hover:shadow-lg  transition all duration-250  ease-in-out "
+      >
         Connect wallet
       </button>
     </div>

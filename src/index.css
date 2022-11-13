@@ -3,12 +3,24 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
-
 body {
   font-family: "Red Rose", cursive;
   overflow-x: hidden;
+  position: relative;
 }
+.modal {
+  background-color: rgba(64, 64, 64, 0.7);
+  position: fixed;
+  left: 0%;
+  top: 0%;
 
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+
+  z-index: 20;
+}
 .nav-btn {
   background: linear-gradient(90deg, #a02279 11.45%, #a02279 11.45%);
 }

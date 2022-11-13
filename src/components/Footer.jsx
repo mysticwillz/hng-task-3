@@ -6,7 +6,7 @@ import twitter from "../assets/twitter.png";
 import cc from "../assets/cc.png";
 export default function Footer() {
   return (
-    <footer className="w-full h-[322px] bg-[#1d1d1e] mx-auto flex items-center justify-center">
+    <footer className="w-full h-[322px] bg-[#1d1d1e] mx-auto flex items-center   pb-0   mb-0 justify-center">
       <section className="flex justify-around w-full  text-white">
         <div className="flex flex-col justify-between">
           <img src={Group} alt="footer" className="w-[233px] h-[40px]" />

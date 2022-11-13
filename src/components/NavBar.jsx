@@ -1,9 +1,12 @@
 import GroupLogo from "../assets/GroupLogo.png";
 import Sidebar from "./Sidebar";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { ModalContext } from "../context/ModalContext";
+import { Link } from "react-router-dom";
 
 function NavBar() {
   const [hideSideBar, setHideSideBar] = useState(true);
+  const { setShowModal } = useContext(ModalContext);
 
   return (
     <>
@@ -13,20 +16,25 @@ function NavBar() {
 
           <ul className=" hidden md:flex items-center w-[476px] justify-between relative ">
             <li className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
-              <a href="">home</a>
+              <Link to="/">home</Link>
             </li>
             <li className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
-              <a href="">place to stay</a>
+              <Link to="/place-to-stay">place to stay</Link>
             </li>
             <li className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
-              <a href="">NFTs</a>
+              <Link to="#Nfts">NFTs</Link>
             </li>
             <li className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
-              <a href="">community</a>
+              <Link to="#community">community</Link>
             </li>
           </ul>
 
-          <button className=" hidden md:block  h-[48px] w-[170px] text-white rounded-[10px] leading-[19.98px] nav-btn   ">
+          <button
+            onClick={() => {
+              setShowModal(true);
+            }}
+            className=" hidden md:block  h-[48px] w-[170px] text-white rounded-[10px] leading-[19.98px] nav-btn   "
+          >
             Connect wallet
           </button>
           <i
@@ -41,7 +49,11 @@ function NavBar() {
             }}
           ></i>
         </div>
-        <Sidebar hideSideBar={hideSideBar} setHideSideBar={setHideSideBar} />
+        <Sidebar
+          setShowModal={setShowModal}
+          hideSideBar={hideSideBar}
+          setHideSideBar={setHideSideBar}
+        />
       </nav>
     </>
   );

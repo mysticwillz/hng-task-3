@@ -18,6 +18,7 @@ import placeSeven from "../assets/place-seven.png";
 import placeEight from "../assets/place-eight.png";
 import setting from "../assets/setting.jpg";
 import Footer from "../components/Footer";
+import Modal from "../components/Modal";
 
 function PlacesToLive() {
   const data = [
@@ -55,8 +56,9 @@ function PlacesToLive() {
   return (
     <>
       <NavBar />
+      <Modal />
 
-      <main className="max-w-7xl pb-[40px]  mx-auto">
+      <main className="max-w-7xl pb-[50px]  mx-auto">
         <section className="flex flex-col items-start max-w-7xl justify-between lg:flex-row px-[3rem] mt-[40px] mb-[30px] lg:items-center mx-auto">
           {tags.map((x) => {
             const { tag } = x;
