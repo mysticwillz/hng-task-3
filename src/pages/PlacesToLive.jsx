@@ -20,7 +20,10 @@ import setting from "../assets/setting.jpg";
 import Footer from "../components/Footer";
 import Modal from "../components/Modal";
 
+import { ModalContext } from "../context/ModalContext";
+
 function PlacesToLive() {
+  const [showModal, setShowModal] = React.useState(false);
   const data = [
     { card: groupFive },
     { card: groupSix },
@@ -55,8 +58,10 @@ function PlacesToLive() {
   ];
   return (
     <>
-      <NavBar />
-      <Modal />
+      <ModalContext.Provider value={{ showModal, setShowModal }}>
+        <Modal />
+        <NavBar />
+      </ModalContext.Provider>
 
       <main className="max-w-7xl pb-[50px]  mx-auto">
         <section className="flex flex-col items-start max-w-7xl justify-between lg:flex-row px-[3rem] mt-[40px] mb-[30px] lg:items-center mx-auto">

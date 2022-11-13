@@ -4,7 +4,10 @@ import mmm from "../assets/mmm.png";
 
 function Nft() {
   return (
-    <main className="min-h-screen w-full flex justify-center items-center  bg-[#a02279]">
+    <main
+      id="Nfts"
+      className="min-h-screen w-full flex justify-center items-center  bg-[#a02279]"
+    >
       <section className="flex flex-col justify-center mt-8 md:mt-0 items-center p-4 md:flex-row md:justify-between  ">
         <div className=" w-full md:w-[40%] flex flex-col justify-center items-center md:items-start mb-7 md:mb-0  gap-8">
           <h1 className="text-[48px] font-bold text-white  leading-[59.95px] ">

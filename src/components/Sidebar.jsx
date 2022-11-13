@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 function Sidebar({ hideSideBar, setHideSideBar, setShowModal }) {
   return (
     <div
@@ -18,16 +19,16 @@ function Sidebar({ hideSideBar, setHideSideBar, setShowModal }) {
       ></i>
       <ul className=" flex flex-col items-center w-[476px] justify-between relative ">
         <li className="text-[20px]  relative transition all duration-250 ease-in-out leading-[24.98px]  text-[#434343] font-normal capitalize ">
-          <a href="">home</a>
+          <Link to="/"> home</Link>
         </li>
         <li className="text-[20px]  relative transition all duration-250 ease-in-out mt-8 leading-[24.98px] text-[#434343] font-normal capitalize ">
-          <a href="">place to stay</a>
+          <Link to="/place-to-stay">place to stay</Link>
         </li>
         <li className="text-[20px]  relative transition all duration-250 ease-in-out mt-8 leading-[24.98px] text-[#434343] font-normal ">
-          <a href="">NFTs</a>
+          <a href="#Nfts">NFTs</a>
         </li>
         <li className="text-[20px]  relative transition all duration-250 ease-in-out mt-8 leading-[24.98px] text-[#434343] font-normal capitalize ">
-          <a href="">community</a>
+          <a href="#community">community</a>
         </li>
       </ul>
 
