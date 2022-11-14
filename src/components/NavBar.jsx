@@ -3,10 +3,11 @@ import Sidebar from "./Sidebar";
 import { useContext, useState } from "react";
 import { ModalContext } from "../context/ModalContext";
 import { Link } from "react-router-dom";
+import { scrollToSection } from "./ScrollTo";
 
 function NavBar() {
   const [hideSideBar, setHideSideBar] = useState(true);
-  const { setShowModal } = useContext(ModalContext);
+  const { setShowModal, community, Nfts } = useContext(ModalContext);
 
   return (
     <>
@@ -21,10 +22,20 @@ function NavBar() {
             <li className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
               <Link to="/place-to-stay">place to stay</Link>
             </li>
-            <li className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
+            <li
+              onClick={() => {
+                scrollToSection(Nfts);
+              }}
+              className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize "
+            >
               <Link to="#Nfts">NFTs</Link>
             </li>
-            <li className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize ">
+            <li
+              onClick={() => {
+                scrollToSection(community);
+              }}
+              className="text-[20px]  relative transition all duration-250 ease-in-out  leading-[24.98px] text-[#434343] font-normal capitalize "
+            >
               <Link to="#community">community</Link>
             </li>
           </ul>

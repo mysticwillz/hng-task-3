@@ -8,12 +8,17 @@ import NavBar from "../components/NavBar";
 import Nft from "../components/Nft";
 import { ModalContext } from "../context/ModalContext";
 import { useState } from "react";
+import { useRef } from "react";
 
 function Home() {
   const [showModal, setShowModal] = useState(false);
+  const Nfts = useRef(null);
+  const community = useRef(null);
   return (
     <>
-      <ModalContext.Provider value={{ showModal, setShowModal }}>
+      <ModalContext.Provider
+        value={{ showModal, setShowModal, community, Nfts }}
+      >
         <Modal />
         <NavBar />
         <Hero />

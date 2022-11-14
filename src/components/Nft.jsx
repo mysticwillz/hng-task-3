@@ -1,11 +1,15 @@
 import React from "react";
 
 import mmm from "../assets/mmm.png";
+import { useContext } from "react";
+
+import { ModalContext } from "../context/ModalContext";
 
 function Nft() {
+  const { Nfts } = useContext(ModalContext);
   return (
     <main
-      id="Nfts"
+      ref={Nfts}
       className="min-h-screen w-full flex justify-center items-center  bg-[#a02279]"
     >
       <section className="flex flex-col justify-center mt-8 md:mt-0 items-center p-4 md:flex-row md:justify-between  ">

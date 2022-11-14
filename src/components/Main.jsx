@@ -7,7 +7,8 @@ import groupFive from "../assets/group-five.png";
 import groupSix from "../assets/group-six.png";
 import groupSeven from "../assets/group-seven.png";
 import groupEight from "../assets/group-eight.png";
-
+import { useContext } from "react";
+import { ModalContext } from "../context/ModalContext";
 function Main() {
   const data = [
     { card: groupOne },
@@ -19,9 +20,11 @@ function Main() {
     { card: groupSeven },
     { card: groupEight },
   ];
+
+  const { community } = useContext(ModalContext);
   return (
     <>
-      <main className="max-w-7xl pb-[40px] mx-auto">
+      <main ref={community} className="max-w-7xl pb-[40px] mx-auto">
         <h2 className="font-bold leading-[59.95px] text-[48px] text-black text-center">
           Inspiration for your next adventure
         </h2>
