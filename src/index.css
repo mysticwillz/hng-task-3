@@ -9,8 +9,6 @@ html {
 @import url("https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400;500;600;700&display=swap");
 body {
   font-family: "Red Rose", cursive;
-
-  position: relative;
 }
 .modal {
   background-color: rgba(64, 64, 64, 0.7);
@@ -51,12 +49,4 @@ li::before {
 li:hover::before {
   width: 100%;
   background-color: #81086d;
-}
-
-.hide {
-  transform: translateX(100%);
-}
-
-.show {
-  transform: translateX(0%);
 }

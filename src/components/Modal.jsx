@@ -28,12 +28,12 @@ function Modal() {
         <img
           src={walletOne}
           alt="choose wallet"
-          className="m-4 rounded-[12px] w-[536px] h-[68px] cursor-pointer transform hover:translate-y-[0.5%] hover:shadow-lg"
+          className="m-4 rounded-[12px] w-[357.3px] h-[45.3px] md:w-[536px] md:h-[68px] cursor-pointer transform hover:translate-y-[0.5%] hover:shadow-lg"
         />
         <img
           src={walletTwo}
           alt="choose wallet"
-          className="m-4 cursor-pointer rounded-[12px] transform hover:translate-y-[0.5%] w-[536px] h-[68px] hover:shadow-lg"
+          className="m-4 cursor-pointer rounded-[12px]  w-[357.3px] h-[45.3px] transform hover:translate-y-[0.5%] md:w-[536px] md:h-[68px] hover:shadow-lg"
         />
       </section>
     </main>

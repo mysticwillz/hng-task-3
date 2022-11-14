@@ -9,9 +9,8 @@ function Hero() {
       <div className=" w-full md:w-40% mb-[10px] md:mb-0">
         <h1 className="md:after:whitespace-nowrap text-[56px] leading-[78.4px] font-normal text-[#434343]">
           Rent a <span className="font-bold hero-text"> Place</span> away from
-          <span className="font-bold hero-text">
-            <br /> Home
-          </span>
+          <br />
+          <span className="font-bold hero-text">Home </span>
           in the
           <span className="font-bold hero-text"> Metaverse</span>
         </h1>
