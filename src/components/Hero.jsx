@@ -28,7 +28,7 @@ function Hero() {
             }}
             id="text"
             placeholder="Search for location"
-            className="w-[390px] h-[54px] px-4 focus:border outline-0  rounded-l-[8px] border bg-[#f7f7f7] leading-[18.2px] text-sm text-[#b8b8b8]  border-[#a3a3a3] "
+            className="w-[390px] h-[54px] px-4 focus:border outline-0  rounded-l-[8px] border bg-[#f7f7f7] leading-[18.2px] text-sm text-[#d1d1d1]  border-[#a3a3a3] "
           />
           <button className="rounded-r-[8px] h-[54px] w-[230px] leading-[19.2px] text-white nav-btn bg-[#a02279]">
             Search

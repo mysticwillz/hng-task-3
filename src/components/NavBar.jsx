@@ -11,7 +11,7 @@ function NavBar() {
 
   return (
     <>
-      <nav className="max-w-7xl mx-auto">
+      <nav className="max-w-7xl mx-auto ">
         <div className="flex justify-between items-center py-5 px-4 ">
           <img src={GroupLogo} alt="logo" className="h-[36.37px] w-[233px]" />
 
